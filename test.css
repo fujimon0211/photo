@@ -1,0 +1,53 @@
+
+body {
+  width: 1480px;
+  height: 1110px;
+  background-image: url("sozai_image_113654.jpg");
+  background-size: cover;
+
+}
+.test{
+  width: 100%;
+  height: 30%;
+
+}
+.test2{
+ width: 100%;
+  height: 50%;
+}
+.img-box{
+  margin: 0 auto;
+  height: 600px;
+  width: 800px;
+  animation: changeColor 20s linear ;
+}
+.test3{
+  width: 100%;
+  height: 20%;
+}
+
+@keyframes changeColor{
+  0% {
+  
+    background-image: url("img7.jpg");
+    background-size: cover;
+    
+  }
+  50% {
+   
+    background-image: url("img14.jpg");
+    background-size: cover;
+    
+  }
+  100% {
+    background-image: url("img11.jpg");
+    background-size: cover;
+    
+  }
+}
+
+
+
+
+
+

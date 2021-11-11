@@ -1,0 +1,25 @@
+body{
+
+width:100vw;
+height: 100vh;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+.container-item{
+    width: 30%;
+}
+.container-item-img{
+    border: 1px solid #ccc;
+    height: 150px;
+   
+}
+.container-item-img img{
+    
+    height: auto;
+    max-width: 100%;
+    height: 150px;
+    object-fit: fill;/* 高さを調整する*/
+    width: 100%;
+}

@@ -3,3 +3,16 @@
 
     
 }
+h1{
+    
+    animation-name: animationTest;/*1で解説*/
+animation-fill-mode:zoom-out-right;
+}
+@keyframes animationTest{
+0%{
+opacity: 0;
+}
+80%{
+    opacity: 1;
+}
+}

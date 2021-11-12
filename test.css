@@ -1,50 +1,103 @@
-
 body {
-  width: 1480px;
-  height: 1110px;
-  background-image: url("sozai_image_113654.jpg");
-  background-size: cover;
-
+width: 100vw;
+height: 100vh;
+background-color: black;
 }
-.test{
+.test1{
+  height: 20%;
   width: 100%;
-  height: 30%;
-
+  padding-bottom: 140px
+}
+.test1 h1{
+  color: transparent;
+  font-weight: bold;
+  background-image: url("7ztu.gif");
+  text-align: center;
+  -webkit-background-clip: text;
+  font-size: 150px;
 }
 .test2{
- width: 100%;
-  height: 50%;
+width: 100%;
+height: 60%;
+display:flex;
+padding-top: 30px;
 }
 .img-box{
+  width: 50%;
+  height: 100%;
   margin: 0 auto;
-  height: 600px;
-  width: 800px;
-  animation: changeColor 20s linear ;
 }
-.test3{
+.img-box img{
+ object-fit: contain;
+ width: 100%;
+ height: 100%;
+}
+.img-box2{
+width: 50%;
+height: 100%;
+margin: 0 auto;
+}
+.img-box2 img{
+object-fit: contain;
+ width: 100%;
+ height: 100%;
+}
+.img-box3{
+  width: 50%;
+  height: 100%;
+  margin: 0 auto;
+}
+.img-box3 img{
+  object-fit: contain;
+   width: 100%;
+   height: 100%;
+  }
+.img-box4{
+  width: 50%;
+  height: 100%;
+  margin: 0 auto;
+  }
+.img-box4 img{
+  object-fit: contain;
   width: 100%;
-  height: 20%;
+  height: 100%;
+}
+/*
+@keyframes changeImage{
+
+0%{
+opacity: 1;
+}
+20%{
+  opacity: 0;
+}
+24%{
+  opacity: 1;
+}
+40%{
+  opacity: 0;
+}
+48%{
+  opacity: 1;
+  
+}
+60%{
+  opacity: 0;
+}
+72%{
+  opacity: 1;
+}
+80%{
+  opacity: 0;
+}
+96%{
+  opacity: 1;
 }
 
-@keyframes changeColor{
-  0% {
-  
-    background-image: url("img7.jpg");
-    background-size: cover;
-    
-  }
-  50% {
-   
-    background-image: url("img14.jpg");
-    background-size: cover;
-    
-  }
-  100% {
-    background-image: url("img11.jpg");
-    background-size: cover;
-    
-  }
+
 }
+*/
+
 
 
 

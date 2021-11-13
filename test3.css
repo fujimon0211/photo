@@ -1,18 +1,15 @@
-#stock{
-
-
+body{
+    background-image: url("astronomy-ga90191e47_640.jpg");
+    background-size: cover;
     
 }
-h1{
+.starJudgement{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    top: 270px;
+    font-size: 40px;
+color: whitesmoke;
+text-align: center;
     
-    animation-name: animationTest;/*1で解説*/
-animation-fill-mode:zoom-out-right;
-}
-@keyframes animationTest{
-0%{
-opacity: 0;
-}
-80%{
-    opacity: 1;
-}
 }

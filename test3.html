@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="en"></html>
-<html>    
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="test3.css">
-    <link rel="stylesheet" href="testmobile3.css">
+    <link rel="stylesheet" href="test3.css" />
+    <link rel="stylesheet" href="testmobile3.css" />
     <script src="https://cdn.jsdelivr.net/gh/vaibhav111tandon/vov.css@latest/vov.css"></script>
-</head>
-<body>
-   <div class="starJudgement">
-    <h1>あなたは何座?</h1>
-    <p>あなたの誕生日の時期を選んでください</p>
-    <select name="star">
-        <option value="birth" >選択してください</option>
-        <option value="birth3" >3/21～4/19</option>
+  </head>
+  <body>
+    <div class="starJudgement">
+      <h1>あなたは何座?</h1>
+      <p class="test">あなたの誕生日の時期を選んでください</p>
+      <select name="star">
+        <option value="birth">選択してください</option>
+        <option value="birth3">3/21～4/19</option>
         <option value="birth4">4/20～5/20</option>
         <option value="birth5">5/21～6/21</option>
         <option value="birth6">6/22～7/22</option>
@@ -28,45 +28,44 @@
         <option value="birth12">12/22～1/19</option>
         <option value="birth1">1/20～2/18</option>
         <option value="birth2">2/19～3/20</option>
-    </select>
-    <p></p>
-</div>
-</body>
-<script>
-const output=document.querySelector('p');    
-const select=document.querySelector('select');
-select.addEventListener('change',yourStar);
+      </select>
+      <p></p>
+    </div>
+  </body>
+  <script>
+    const output = document.querySelector("p");
+    const select = document.querySelector("select");
+    select.addEventListener("change", yourStar);
 
-function yourStar(){
-    const choice=select.value;
- if(choice=="birth3"){
-output.textContent="あなたはおひつじ座です";
-}else if(choice==="birth4"){
-    output.textContent="あなたはおうし座です";
-}else if(choice==="birth5"){
-    output.textContent="あなたはふたご座です";
-}else if(choice==="birth6"){
-    output.textContent="あなたはかに座です";
-}else if(choice==="birth7"){
-    output.textContent="あなたはしし座です";
-}else if(choice==="birth8"){
-    output.textContent="あなたはおとめ座です";
-}else if(choice==="birth9"){
-    output.textContent="あなたはてんびん座です";
-}else if(choice==="birth10"){
-    output.textContent="あなたはさそり座です";
-}else if(choice==="birth11"){
-    output.textContent="あなたはいて座です";
-}else if(choice==="birth12"){
-    output.textContent="あなたはやぎ座です";
-}else if(choice==="birth1"){
-    output.textContent="あなたはみずがめ座です";
-}else if(choice==="birth2"){
-    output.textContent="あなたはうお座です";
-}else {
-    output.textContent = 'あなたの誕生日の時期を選んでください';
-  };
-};
-
-</script>
+    function yourStar() {
+      const choice = select.value;
+      if (choice == "birth3") {
+        output.textContent = "あなたはおひつじ座です";
+      } else if (choice === "birth4") {
+        output.textContent = "あなたはおうし座です";
+      } else if (choice === "birth5") {
+        output.textContent = "あなたはふたご座です";
+      } else if (choice === "birth6") {
+        output.textContent = "あなたはかに座です";
+      } else if (choice === "birth7") {
+        output.textContent = "あなたはしし座です";
+      } else if (choice === "birth8") {
+        output.textContent = "あなたはおとめ座です";
+      } else if (choice === "birth9") {
+        output.textContent = "あなたはてんびん座です";
+      } else if (choice === "birth10") {
+        output.textContent = "あなたはさそり座です";
+      } else if (choice === "birth11") {
+        output.textContent = "あなたはいて座です";
+      } else if (choice === "birth12") {
+        output.textContent = "あなたはやぎ座です";
+      } else if (choice === "birth1") {
+        output.textContent = "あなたはみずがめ座です";
+      } else if (choice === "birth2") {
+        output.textContent = "あなたはうお座です";
+      } else {
+        output.textContent = "あなたの誕生日の時期を選んでください";
+      }
+    }
+  </script>
 </html>

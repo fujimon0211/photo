@@ -1,0 +1,84 @@
+body{
+    width: 100vw;
+    height: 100vh;
+}
+.header{
+    text-align: center;
+    font-size: 100px;
+}
+.samurai{
+    width:100%;
+    height: 100%;
+}
+.header{
+    width: 100%;
+    height: 20%;
+}
+.samurai-image-box{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    
+}
+.samurai-image{
+  position: relative;
+    width: 50%;
+    height: 100%;
+   
+}
+.samurai-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+.samurai-image  .caption {
+	font-size:		120%;
+	text-align: 		center;
+	padding-top:		80px;
+	color:			#fff;
+}
+.samurai-image .mask {
+	width:			100%;
+	height:			100%;
+	position:		absolute;	/* 絶対位置指定 */
+	top:			0;
+	left:			0;
+	opacity:		0;	/* マスクを表示しない */
+	background-color:	rgba(0,0,0,0.8);	/* マスクは半透明 */
+	-webkit-transition:	all 0.2s ease;
+	transition:		all 0.2s ease;
+}
+.samurai-image:hover .mask {
+	opacity:		1;	/* マスクを表示する */
+}
+.samurai-image2{
+  position: relative;
+    width: 50%;
+    height: 100%;
+    
+    
+}
+.samurai-image2 .caption2 {
+	font-size:		120%;
+	text-align: center;
+	padding-top:		80px;
+	color:			#fff;
+}
+.samurai-image2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.samurai-image2 .mask2{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    background-color:	rgba(0,0,0,0.8) ;
+    transition: all 0.2s ease;
+    opacity:0;	
+}
+.samurai-image2:hover .mask2 {
+	opacity:		1;	/* マスクを表示する */
+}

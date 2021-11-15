@@ -33,14 +33,14 @@
     </div>
   </body>
   <script>
-    const output = document.querySelector("p");
-    const select = document.querySelector("select");
+    const output = document.querySelector("p");//pタグを選択、変数outputに代入
+    const select = document.querySelector("select");//selectタグを選択
     select.addEventListener("change", yourStar);
 
     function yourStar() {
       const choice = select.value;
       if (choice == "birth3") {
-        output.textContent = "あなたはおひつじ座です";
+        output.textContent = "あなたはおひつじ座です";//pタグに「あなたはおひつじ座です」を入力
       } else if (choice === "birth4") {
         output.textContent = "あなたはおうし座です";
       } else if (choice === "birth5") {

@@ -21,7 +21,7 @@ body{
     
 }
 .samurai-image{
-  position: relative;
+  position: relative;/*位置はpositionで正確に定義する  */
     width: 50%;
     height: 100%;
    
@@ -40,19 +40,19 @@ body{
 .samurai-image .mask {
 	width:			100%;
 	height:			100%;
-	position:		absolute;	/* 絶対位置指定 */
+	position:		absolute;	/* 位置はpositionで正確に定義する*/
 	top:			0;
 	left:			0;
-	opacity:		0;	/* マスクを表示しない */
-	background-color:	rgba(0,0,0,0.8);	/* マスクは半透明 */
+	opacity:		0;	/* 最初は表示しない */
+	background-color:	rgba(0,0,0,0.8);	
 	-webkit-transition:	all 0.2s ease;
 	transition:		all 0.2s ease;
 }
 .samurai-image:hover .mask {
-	opacity:		1;	/* マスクを表示する */
+	opacity:		1;	/* 表示 */
 }
 .samurai-image2{
-  position: relative;
+  position: relative;/*位置はpositionで正確に定義する  */
     width: 50%;
     height: 100%;
     
@@ -72,7 +72,7 @@ body{
 .samurai-image2 .mask2{
     width: 100%;
     height: 100%;
-    position: absolute;
+    position: absolute;/*位置はpositionで正確に定義する  */
     top:0;
     left: 0;
     background-color:	rgba(0,0,0,0.8) ;
@@ -80,5 +80,5 @@ body{
     opacity:0;	
 }
 .samurai-image2:hover .mask2 {
-	opacity:		1;	/* マスクを表示する */
+	opacity:		1;	/* 表示 */
 }

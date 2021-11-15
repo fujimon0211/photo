@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="test6.css">
+    <link rel="stylesheet" href="testmobile6.css">
+</head>
+<body>
+    <div class="data-base">
+        <div class="header">G7各国データ</div>
+        <h2 >国を選択してください</h2>
+       
+        <select>
+            <option value="japan">日本</option>
+            <option value="america">アメリカ</option>
+            <option value="italy">イタリア</option>
+            <option value="UK">イギリス</option>
+            <option value="germany">ドイツ</option>
+            <option value="france">フランス</option>
+            <option value="canada">カナダ</option>
+        </select>
+    </div>
+
+        <div class="list" id="image">
+           
+            <img src="ntf_131.png">
+        </div>
+        
+      
+  
+    
+</body>
+<script>
+    
+    
+    const choice=document.querySelector("select");
+
+    choice.addEventListener("change",selectData);
+    function selectData(){
+          const option=choice.value;
+         if(option==="america"){
+           
+            document.getElementById("image").innerHTML="<img src='ntf_401.png'>"
+            
+        }else if(option==="italy"){
+            document.getElementById("image").innerHTML="<img src='ntf_306.png'>"
+         
+    }else if(option==="UK"){
+        document.getElementById("image").innerHTML="<img src='ntf_305.png'>"
+        
+    }else if(option==="germany"){
+        document.getElementById("image").innerHTML="<img src='ntf_322.png'>"
+      
+    }else if(option==="france"){
+        document.getElementById("image").innerHTML="<img src='ntf_327.png'>"
+      
+    }else if(option==="canada"){
+        document.getElementById("image").innerHTML="<img src='ntf_404.png'>"
+      
+        }else if(option==="japan"){
+           
+            document.getElementById("image").innerHTML="<img src='ntf_131.png'>"
+        }
+        };
+
+
+</script>
+</html>

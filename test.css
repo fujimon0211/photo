@@ -1,9 +1,13 @@
+*{
+  padding: 0px;
+  margin: 0px;
+}
 body {
 width: 100vw;
 height: 100vh;
 background-color: black;
 }.test1{
-  height: 20%;
+  height: 10%;
   width: 100%;
   padding-bottom: 140px
 }.test1 h1{
@@ -12,10 +16,10 @@ background-color: black;
   background-image: url("7ztu.gif");
   text-align: center;
   -webkit-background-clip: text;
-  font-size: 150px;
+  font-size: 100px;
 }.test2{
 width: 100%;
-height: 60%;
+height: 90%;
 display:flex;
 padding-top: 30px;
 }.img-box{
@@ -26,42 +30,46 @@ padding-top: 30px;
  object-fit: contain;
  width: 100%;
  height: 100%;
+ animation-name: changeImage;
+ animation-duration: 40s;
+    animation-iteration-count: infinite;
 }
-/*
+
 @keyframes changeImage{
 
 0%{
 opacity: 1;
+
 }
 20%{
   opacity: 0;
 }
-24%{
+25%{
   opacity: 1;
 }
 40%{
   opacity: 0;
 }
-48%{
+45%{
   opacity: 1;
   
 }
 60%{
   opacity: 0;
 }
-72%{
+65%{
   opacity: 1;
 }
 80%{
   opacity: 0;
 }
-96%{
+85%{
   opacity: 1;
 }
 
 
 }
-*/
+
 
 
 

@@ -1,6 +1,9 @@
+@media(max-width:750px){
+
 .test2{
     display: block;
 }
 .img-box {
   width: 100%;
+}
 }

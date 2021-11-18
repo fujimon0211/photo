@@ -32,8 +32,10 @@ function imageReturn2() {
 }
 
 //実行
-setTimeout(imageReturn, 39000), setTimeout(imageChange, 8000), setTimeout(imageNew, 16000), setTimeout(imageMoreNew, 24000),setTimeout(imageMoreMore, 32000)
-setTimeout(imageReturn2, 39000), setTimeout(imageChange2, 8000), setTimeout(imageNew2, 16000), setTimeout(imageMoreNew2, 24000),setTimeout(imageMoreMore2, 32000)
+setTimeout(imageReturn, 39000), setTimeout(imageChange, 8000), setTimeout(imageNew, 16000), setTimeout(imageMoreNew, 24000)
+,setTimeout(imageMoreMore, 32000)//リロードしてまた最初からアニメーションをループ
+setTimeout(imageReturn2, 39000), setTimeout(imageChange2, 8000), setTimeout(imageNew2, 16000), setTimeout(imageMoreNew2, 24000)
+, setTimeout(imageMoreMore2, 32000)//リロードしてまた最初からアニメーションをループ
 
 
 

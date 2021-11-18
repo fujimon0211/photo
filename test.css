@@ -31,43 +31,29 @@ padding-top: 30px;
  width: 100%;
  height: 100%;
  animation-name: changeImage;
- animation-duration: 40s;
+ animation-duration: 40s;/* 一周あたり40秒 */
     animation-iteration-count: infinite;
-}
-
+}/*写真の入れ替え */
 @keyframes changeImage{
-
 0%{
 opacity: 1;
-
-}
-20%{
+}20%{
   opacity: 0;
-}
-25%{
+}25%{
+  opacity: 1;
+}40%{
+  opacity: 0;
+}45%{
+  opacity: 1;
+  }60%{
+  opacity: 0;
+}65%{
+  opacity: 1;
+}80%{
+  opacity: 0;
+}85%{
   opacity: 1;
 }
-40%{
-  opacity: 0;
-}
-45%{
-  opacity: 1;
-  
-}
-60%{
-  opacity: 0;
-}
-65%{
-  opacity: 1;
-}
-80%{
-  opacity: 0;
-}
-85%{
-  opacity: 1;
-}
-
-
 }
 
 

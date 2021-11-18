@@ -1,9 +1,26 @@
 @media (max-width: 750px) {
+    .header{
+        font-size: 50px;
+    }
     .list-box{
         display: block;
         width: 100%;
+        height: 300px;
         }
+        .list{
+            width: 100%;
+            height: 300px;
+            
+        }
+    .list img{
+        height: 100%;
+    }    
     .list{
         width: 100%;
+        padding: 0px;
+    }
+    .list-caption{
+        padding: 0px;
+        padding-top: 20px;
     }    
 }

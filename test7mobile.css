@@ -1,0 +1,8 @@
+@media(max-width:750px){
+.chart-body{
+    margin-top: 70px;
+}
+.button{
+    width: 120px;
+}
+}

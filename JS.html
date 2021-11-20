@@ -10,13 +10,36 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
-    <button id="btn-a" value="value-a">ボタンA</button>   
+   <div class="modal-box">
+     <div class="modal">
+    <button id="open-btn" >モーダルを開く</button>   
+    <dialog id="dialog1">
+    　　<h1>ダイアログボックス</h1>
+        <button id="close-btn">モーダルを閉じる</button>
+    </dialog>
+     </div>  
+   
+   </div> 
 </body>
 </html>
 <script>
-    //val()でvalueをvalue-aからbtnAに変更する
-$('#btn-a').click(function(){
-$('#btn-a').val('btnA');
+const dialog=document.getElementById('dialog1');   
+const open = document.getElementById('open-btn');
+const close=document.getElementById("close-btn");
 
-});
+
+open.addEventListener("click", function() {  
+  
+ dialog.show();
+ dialog.style.background= 'skyblue';//色を挿入
+  
+}, false);
+close.addEventListener("click", function() { 
+  
+  dialog.close();
+   
+ }, false);
+
+
+
 </script>

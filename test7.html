@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="test7.css">
+    <link rel="stylesheet" href="test7mobile.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <div class="chart">
+        <div class="chart-header">今月の見積もり</div>
+
+        <div class="chart-body">
+            <p>・一日あたりの雑費予算<br>(お菓子や飲み物など)</p>
+            <input type="number" id="day">
+            <p>・外食費</p>
+            <input type="number" id="1week">
+            <p>・交通費</p>
+            <input type="number" id="play">
+            <p>・特別費用<br>(入場料、宿泊料、プレゼントなど)</p>
+            <input type="number" id="special">
+            <p>・想定予算</p>
+            <input type="number" id="imagined">
+            <p>・今月の必要金額</p>
+            <p id="output-message"></p>
+            <input type="button" onclick="calculation()" value="計算" class="button">
+            
+        </div>
+
+    </div>
+</body>
+</html>
+<script>
+   
+
+        function calculation(){
+    const day=document.getElementById("day");
+    const input=day.value;
+    const number=Number(input)*30;
+    const week=document.getElementById("1week");
+    const input2=week.value;
+    const number2=Number(input2);
+    const special=document.getElementById("special");
+    const input3=special.value;
+    const number3=Number(input3);
+    const play=document.getElementById("play");
+    const input4=play.value;
+    const number4=Number(input4);
+    const imagine=document.getElementById("imagined");
+    const input5=imagine.value;
+    const number5=Number(input5);
+    const result=document.getElementById("output-message");
+
+
+            const output=number+number2 +number3+number4;
+            const outputMessage=output+"円";
+            result.innerHTML = outputMessage;
+           
+
+            if(output>number5){
+                
+                result.style.color="red";  
+
+            }
+        }
+</script>

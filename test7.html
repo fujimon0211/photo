@@ -34,24 +34,22 @@
 </body>
 </html>
 <script>
-   
-
-        function calculation(){
+   function calculation(){
     const day=document.getElementById("day");
-    const input=day.value;
-    const number=Number(input)*30;
+    const input=day.value;//入力値を取得
+    const number=Number(input)*30;//データ型を数字に変換
     const week=document.getElementById("1week");
-    const input2=week.value;
-    const number2=Number(input2);
+    const input2=week.value;//入力値を取得
+    const number2=Number(input2);//データ型を数字に変換
     const special=document.getElementById("special");
-    const input3=special.value;
-    const number3=Number(input3);
+    const input3=special.value;//入力値を取得
+    const number3=Number(input3);//データ型を数字に変換
     const play=document.getElementById("play");
-    const input4=play.value;
-    const number4=Number(input4);
+    const input4=play.value;//入力値を取得
+    const number4=Number(input4);//データ型を数字に変換
     const imagine=document.getElementById("imagined");
-    const input5=imagine.value;
-    const number5=Number(input5);
+    const input5=imagine.value;//入力値を取得
+    const number5=Number(input5);//データ型を数字に変換
     const result=document.getElementById("output-message");
 
 
@@ -60,9 +58,9 @@
             result.innerHTML = outputMessage;
            
 
-            if(output>number5){
+            if(output>number5){//想定予算を超えた場合赤字になる
                 
-                result.style.color="red";  
+                result.style.color="red";  //条件付きで色を付ける
 
             }
         }

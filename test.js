@@ -12,7 +12,7 @@ function imageMoreMore() {
     document.getElementById("album").innerHTML = "<img src='img19.jpg'>";
 }
 function imageReturn() {
-    location.reload();
+    location.reload();//ページをリロードして最初の写真に戻す
 }
 //２個目の写真の入れ替わり
 function imageChange2() {
@@ -28,7 +28,7 @@ function imageMoreMore2() {
     document.getElementById("album2").innerHTML = "<img src='img13.jpg'>";
 }
 function imageReturn2() {
-    document.getElementById("album2").innerHTML = "<img src='img11.jpg'>";
+    location.reload();//ページをリロードして最初の写真に戻す
 }
 
 //実行

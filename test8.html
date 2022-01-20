@@ -9,35 +9,36 @@
     <link rel="stylesheet" href="test8mobile.css">
 </head>
 <body>
+    <label for="checkbox">
     <div class="answer">
         <div class="answer-header">霊感診断
             <p>※当てはまるものにのみチェックしてください</p>
         </div>
         <div class="answer-box">
-            <form name="form1" action="">
+            <form name="form1" >
           <div class="answer-contents">
               <p>人に対して優しいと思いますか?</p>
-              <input type="checkbox" id="options1" >当てはまる
+              <label for="checkbox"><input type="checkbox" name="options1" id="checkbox">当てはまる</label>
             
           </div>
           <div class="answer-contents">
             <p>ピンチをチャンスに変えてきたほうだと思いますか?</p>
-            <input type="checkbox" id="options3" >当てはまる
+            <label for="checkbox2"><input type="checkbox" name="options3" id="checkbox2">当てはまる</label>
            
         </div>
         <div class="answer-contents">
             <p>電化製品はよく壊れますか?</p>
-            <input type="checkbox" id="options5">当てはまる
+            <label for="checkbox3"><input type="checkbox" name="options5" id="checkbox3">当てはまる</label>
           
         </div>
         <div class="answer-contents">
             <p>知らない人からよく話しかけられますか?</p>
-            <input type="checkbox" id="options7">当てはまる
+            <label for="checkbox4"><input type="checkbox" name="options7" id="checkbox4">当てはまる</label>
             
         </div>
         <div class="answer-contents">
             <p>感情の起伏が激しいですか?</p>
-            <input type="checkbox" id="options9">当てはまる
+            <label for="checkbox5"><input type="checkbox" name="options9"  id="checkbox5">当てはまる</label>
         </div>
             <input type="button" value="判定する" onclick="analyze()">
             <p id="output"></p>
@@ -45,30 +46,32 @@
         </div>
         
     </div>
+
 </body>
 </html>
 <script>
  
      function analyze(){
-       
+       //チェックがされたものとして変数を置く。
         var answer1=document.form1.options1.checked;
         var answer2=document.form1.options3.checked;
         var answer3=document.form1.options5.checked;
         var answer4=document.form1.options7.checked;
         var answer5=document.form1.options9.checked;
-    var out=document.getElementById("output")
-    if(answer1==true && answer2==true && answer3==true && answer4==true && answer5==true){  //5つ当てはまる
-       out.innerHTML="あなたは霊感がかなり強いです。";
+    var out=document.getElementById("output")//id outputの情報を取得
+
+    if(answer1==true && answer2==true && answer3==true && answer4==true && answer5==true){  
+       out.innerHTML="あなたは霊感がかなり強いです。";//取得したidにHTMLを代入
     }else if(answer1==true&&answer2==true&&answer3==true&&answer4==true||answer1==true&&answer2==true&&answer3==true&&answer5==true||answer1==true&&answer2==true&&answer4==true&&answer5==true||answer1==true&&answer3==true&&answer4==true&&answer5==true||answer2==true&&answer3==true&&answer4==true&&answer5==true){
-        out.innerHTML="あなたは霊感が強いです"//4つ当てはまる 
+        out.innerHTML="あなたは霊感が強いです"//取得したidにHTMLを代入
     }else if(answer1==true &&answer2==true&&answer3==true || answer1==true&&answer2==true&&answer4==true ||answer1==true&&answer2==true&&answer5==true ||answer1==true&&answer3==true&&answer4|| answer1==true&&answer3==true&&answer5||answer1==true&&answer4==true&&answer5==true||answer2==true&&answer3==true&&answer4==true||answer2==true&&answer3==true&&answer5==true ||answer2==true&&answer4==true&&answer5||answer3==true&&answer4==true&&answer5==true){
-        out.innerHTML="あなたは霊感が少し強いです"//3つ当てはまる
+        out.innerHTML="あなたは霊感が少し強いです"//取得したidにHTMLを代入
     }else if(answer1==true&&answer2||answer1==true&&answer3 ||answer1==true&&answer4==true|| answer1==true&&answer5==true ||answer2==true&&answer3==true||answer2==true&&answer4==true||answer2==true&&answer5==true||answer3==true&&answer4==true||answer3==true&&answer5==true ||answer4==true&&answer5==true){
-        out.innerHTML="あなたは霊感を持っています"//2津当てはまる
+        out.innerHTML="あなたは霊感を持っています"//取得したidにHTMLを代入
     }else if(answer1==true || answer2==true || answer3==true || answer4==true ||answer5==true ){
-        out.innerHTML="あなたは霊感をやや持っています。";//一つ当てはまる 
+        out.innerHTML="あなたは霊感をやや持っています。";//取得したidにHTMLを代入
     }else(
-        out.innerHTML="あなたは霊感を持っていません。"
+        out.innerHTML="あなたは霊感を持っていません。"//取得したidにHTMLを代入
     )
     };
 </script>

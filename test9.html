@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="test9.css">
+    <link rel="stylesheet" href="test9mobile.css">
+</head>
+<body>
+    <div class="color-change">
+        <div class="color-header">背景色と文字の色</div>
+        <div class="change">
+        <div class="change-box" id="background">
+
+            <p id="font">こんにちは</p>
+            
+        
+        </div>
+        
+        <select id="color-select">
+            <option id="default">選択してください</option>
+            <option id="red">文字を赤色に変える</option>
+            <option id="blue">文字を青色に変える</option>
+            <option id="yellow">文字を黄色に変える</option>
+           </select>
+        <select id="background-color-select">
+            <option id="default2">選択してください</option>
+            <option id="red2">背景を赤色に変える</option>
+            <option id="blue2">背景を青色に変える</option>
+            <option id="yellow2">背景を黄色に変える</option>
+           </select>
+        <select id="font-size-select">
+            </select>
+        <input type="number" id="size" value="0"> 
+         
+    </div>
+</div>
+</body>
+</html>
+<script>
+//文字の色を変える
+var select = document.getElementById("color-select");
+const colors=document.getElementById("font");
+select.addEventListener("change",function(){
+    
+   if(select.options[1].selected==true && select.options[2].selected==false && select.options[3].selected==false){
+	colors.style.color="red";
+    }else if(select.options[1].selected==false && select.options[2].selected==true && select.options[3].selected==false){
+        colors.style.color="blue";
+    }else if(select.options[1].selected==false && select.options[2].selected==false && select.options[3].selected==true){
+        colors.style.color="yellow";
+    }else{
+        colors.style.color="black"; 
+    }
+});
+//背景色を変える
+
+var select2 = document.getElementById("background-color-select");
+const image=document.getElementById("background");
+select2.addEventListener("change",function(){
+
+    if(select2.options[1].selected==true && select2.options[2].selected==false && select2.options[3].selected==false){
+
+        image.style.backgroundColor="red"
+    }else if(select2.options[1].selected==false && select2.options[2].selected==true && select2.options[3].selected==false){
+        image.style.backgroundColor="blue";
+    }else if(select2.options[1].selected==false && select2.options[2].selected==false && select2.options[3].selected==true){
+        image.style.backgroundColor="yellow";
+    }else{
+        image.style.backgroundColor="white"; 
+    }
+});
+
+//文字の大きさを変える
+
+ const large=document.getElementById("size");
+
+ const big=large.value;
+
+ const number=Number(big);
+
+
+ size.addEventListener("keypress",function(e){
+if(e.key === 'Enter'){
+    colors.style.fontSize=number+("px");
+    console.log(big);
+}
+
+ });
+
+</script>

@@ -18,6 +18,7 @@ dialog{
     width: 400px;
     height: 300px;
     text-align: center;
+    border-inline: 5px solid red;/*左右のborderを指定*/
     
 }
 

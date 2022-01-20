@@ -1,27 +1,38 @@
-body{
-background-image: url("5110031_s.jpg");
-background-size: cover;
-width: 100vw;
-height: 100vh;
+@font-face {
+  font-family: "horror"; /*好きな名前を設定します。*/
+  src: url("C:\Users\fujir\Desktop\css練習\photo\ibaraji_1_4 (1)\ibaraji04.ttf") format("ttf");
 }
-.answer{
-    width: 100%;
-    height: 100%;
-    padding-top: 70px;
+body {
+  background-image: url("5110031_s.jpg");
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+ 
 }
-.answer-header{
-    text-align: center;
-    font-size: 50px;
-    color: rgba(255, 255, 255, 0.479);
+.answer {
+  width: 100%;
+  height: 100%;
+  padding-top: 70px;
+  font-family: "horror";
 }
-.answer-header p{
-    font-size: 15px;
+.answer-header {
+  text-align: center;
+  font-size: 50px;
+  color: rgba(255, 255, 255, 0.479);
+  filter: blur();
+  font-family: "horror";
 }
-.answer-box{
-    text-align: center;
-    color: rgba(255, 255, 255, 0.479);
+.answer-header p {
+  font-size: 15px;
+  font-family: "horror";
 }
-input[button]{
-
-    color: rgba(255, 255, 255, 0.479);
+.answer-box {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.479);
+}
+input[button] {
+  color: rgba(255, 255, 255, 0.479);
+}
+input[type="checkbox"] {
+  accent-color: rgb(185, 67, 67);/*チェックボックスの色を変更*/
 }

@@ -14,7 +14,7 @@
         <div class="chart-header">今月の見積もり</div>
 
         <div class="chart-body">
-            <p>・一日あたりの雑費予算<br>(お菓子や飲み物など)</p>
+            <p>・一日あたりの雑費<br>(お菓子や飲み物など)</p>
             <input type="number" id="day">
             <p>・外食費</p>
             <input type="number" id="1week">
@@ -22,7 +22,7 @@
             <input type="number" id="play">
             <p>・特別費用<br>(入場料、宿泊料、プレゼントなど)</p>
             <input type="number" id="special">
-            <p>・想定予算</p>
+            <p>・予算</p>
             <input type="number" id="imagined">
             <p>・今月の必要金額</p>
             <p id="output-message"></p>
@@ -35,7 +35,22 @@
 </html>
 <script>
    function calculation(){
-    const day=document.getElementById("day");
+    const day=document.getElementById("day");//id dayから情報を取得
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
     const input=day.value;//入力値を取得
     const number=Number(input)*30;//データ型を数字に変換
     const week=document.getElementById("1week");

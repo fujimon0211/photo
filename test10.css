@@ -1,0 +1,16 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    background-color: black;
+}
+.detail{
+    width: 100%;
+   
+}
+.profile{
+    width: 50%;
+}
+.detail-section{
+    display: none;
+}

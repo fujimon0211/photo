@@ -6,11 +6,25 @@ body{
 }
 .detail{
     width: 100%;
-   
+   display: flex;
+}
+.profile-section{
+    width: 50%;
 }
 .profile{
     width: 50%;
+   
 }
 .detail-section{
     display: none;
+}
+.photo{
+    margin-top: 100px;
+    width: 50%;
+    height: 533px;
+    background-image: url("profile_photo.JPG");
+    background-color: cover;
+}
+.bokashi{
+    opacity: 0.3;
 }

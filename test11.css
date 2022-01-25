@@ -1,0 +1,44 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    background-color: black;
+}
+.detail{
+    width: 100%;
+    position: relative;
+  display: flex;
+}
+.profile-section{
+    width: 50%;
+}
+.profile{
+    width: 50%;
+    position: absolute;
+    
+    font-size: 20px;
+   
+}
+.main-sentence{
+    position: absolute;
+    top: 240px;
+    font-size: 30px;
+}
+.detail-section{
+    width: 50%;
+    display: none;
+    position: absolute;
+ 
+    line-height: 30px;
+    top: 100px;
+}
+.photo{
+    margin-top: 100px;
+    width: 50%;
+    height: 533px;
+    background-image: url("profile_photo.JPG");
+    background-color: cover;
+}
+.bokashi{
+    opacity: 0.15;
+}

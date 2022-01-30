@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="test12.css">
+    <link rel="stylesheet" href="test12mobile.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Allison&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+<div class="gallary">
+    <div class="gallary-box">
+      <a href="index.html"><img src="bicky.png" class="photo1"></a> 
+      <a href="test5.html"><img src="ongakusyuin.PNG" class="photo2"></a> 
+        <a href="test6.html"><img src="youtube_photo_profile.png" class="photo3"></a> 
+        <a href="test7.html"><img src="trip_photo.PNG" class="photo4"></a> 
+    </div>
+</div>
+    </body>
+<script>
+  function loop(){  
+    function slide(){
+        $(".photo1").fadeOut(2000)
+        $(".photo4").hide()
+        $(".photo2").hide()
+        $(".photo3").fadeIn(4000)
+        
+
+
+    };
+    setTimeout(slide,6000)
+    function slide2(){
+        $(".photo3").fadeOut(2000)
+        $(".photo4").hide()
+        $(".photo1").hide()
+        $(".photo2").fadeIn(4000)
+        
+
+
+    };
+    setTimeout(slide2,10000)
+    function slide3(){
+        $(".photo2").fadeOut(2000)
+        $(".photo1").hide()
+        $(".photo1").hide()
+        $(".photo4").fadeIn(4000)
+        
+
+
+    };
+    setTimeout(slide3,14000)
+    function slide4(){
+        $(".photo4").fadeOut(2000)
+        $(".photo1").hide()
+        $(".photo2").hide()
+        $(".photo1").fadeIn(4000)
+        
+
+
+    };
+    setTimeout(slide4,18000)
+    };
+    setInterval(loop,20000)
+</script>    

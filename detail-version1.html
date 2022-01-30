@@ -8,15 +8,52 @@
     <link rel="stylesheet" href="test10.css">
     <link rel="stylesheet" href="test10mobile.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Allison&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
+    <div class="menu">
+        <div class="menu-box">
+            <a href="./index.html"> <p>Top</p> <span class="fas fa-home icon"></span> </a>
+            <a href="./profile.html"  class="now"> <p>Profile</p> <span class="far fa-id-card icon" ></span> </a>
+            <a href="./contact.html" ><p>Contact</p> <span class="fa fa-comments icon"></span> </a>
+            <a href="./photo.html" > <p>Photos</p> <span class="fas fa-images icon"></span> </a>
+            <a href="https://twitter.com/musicbicky"> <p>News</p> <span class="far fa-newspaper icon"></span> </a>
+            <a href="./schedule.html" > <p>Schedule</p> <span class="far fa-calendar-alt icon"></span> </a>
+           
+        </div> 
+    </div>
+    <div class="side-menu">
+        <div class="side-menu-top">
+          <p class="side-menu-text">
+            <span class="fas fa-caret-left close-icon"></span>
+            menu
+          </p>
+        </div>
+        <div class="side-menu-box">
+          <a href="./index.html" > <p>Top</p> <span class="fas fa-home icon"></span> </a>
+          <a href="./profile.html" class="now side"> <p>Profile</p> <span class="far fa-id-card icon"></span> </a>
+          <a href="./contact.html" ><p>Contact</p> <span class="fa fa-comments icon"></span> </a>
+          <a href="./photo.html" > <p>Photos</p> <span class="fas fa-images icon"></span> </a>
+          <a href="https://twitter.com/musicbicky"> <p>News</p> <span class="far fa-newspaper icon"></span> </a>
+          <a href="./schedule.html" > <p>Schedule</p> <span class="far fa-calendar-alt icon"></span> </a>
+        </div>
+    </div>
     <div class="detail">
-        <div class="profile-section">
+    
+            
         <div class="profile">
+         <div class="profile-header">
         <h1>Profile</h1>
+        <div class="menu-icon">
+          <a href="#" class="btn" id="side-menu-btn">
+            <span class="fa fa-bars fa-4x bar-icon"></span>
+          </a>
+          </div>
+        </div> 
+        <img src="profile_new.jpg" class="profile-photo">
         <a class="main-sentence">東京音楽大学ピアノ演奏家コース1年在学中。<br>
             第7回東京国際ピアノコンクール第1位。<br>2021年に「音楽修員」を立ち上げ、第2回演奏会を2022年8月12日に豊洲にて開催予定。
             
@@ -47,12 +84,23 @@
           
                 <a class="detail-close-btn">もとに戻す△</a>
         </div>
-    </div>
+  
 
     <div class="photo">
      
     </div>
+    
 </div> 
+<div class="add-contents">
+    <div class="contents-box">
+      <a href="mailto:lucky.bicky.island@gmail.com" target="_blank" rel="noopener noreferrer"><img src="bicky.png" class="contents" ></a> 
+      <a href="https://ongakushuin2021.stores.jp//" target="_blank" rel="noopener noreferrer"><img src="ongakusyuin.PNG" class="contents"></a>
+      <!--
+      <a href="https://www.youtube.com/channel/UCMbk0rM3z9e-W5WjfI8Qr4w/videos?view=0&sort=dd&shelf_id=0" target="_blank" rel="noopener noreferrer"><img src="youtube_photo_profile.png" class="contents"></a>
+      -->
+      <a href="https://instagram.com/bickytravel?r=nametag" target="_blank" rel="noopener noreferrer"><img src="trip_photo.PNG" class="contents"></a>
+    </div>  
+  </div>
 </body>
 <script>
     $(".detail-open-btn").click(function(){

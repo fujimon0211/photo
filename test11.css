@@ -39,15 +39,16 @@ body{
     top: 120px;
     padding-top:  60px;
     /*padding:0px 50px;*/
-    padding-right: 50px ;
+   
     padding-left: 150px;
 }
 .photo{
     margin-top: 100px;
-    width: 50%;
+    padding-right: 40px;
+    width: 70%;
     height: 533px;
     background-image: url("profile_photo.JPG");
-    background-color: cover;
+    background-size: cover;
 }
 .bokashi{
     opacity: 0.3;

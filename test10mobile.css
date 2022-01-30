@@ -231,5 +231,21 @@
       .photo{
           display: none;
       }  
+      .add-contents{
+   
+        padding:30px 50px;
+        position:relative;
+        font-size:0px;
+    } 
+    .contents{
+        padding:10px 10px;
+        width:100%;
+    }
+    .contents-box{
+        width:100%;
+    }
+    .contents-box a{
+        box-sizing:border-box;
+    }
    }
      

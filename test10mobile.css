@@ -179,7 +179,7 @@
       }
       .detail{
           display: block;
-          height: 2200px;
+          height: 1700px;
           overflow: hidden;
         }
       .profile{
@@ -221,17 +221,19 @@
       .main-sentence{
           position: absolute;
           width: 100%;
-         
-          margin-left: 0px;
+         font-size: 10px;
+       
           top: 690px;
+          margin: 0px 1%;
       }
       .detail-section{
         position: absolute;
           width: 100%;
-         
-          margin-left: 0px;
+         padding-top: 0px;
+      
           top: 690px;
-          font-size: 13px;
+          font-size: 10px;
+          margin: 0px 1%;
       }
 
       .photo{

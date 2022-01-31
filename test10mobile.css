@@ -180,13 +180,15 @@
       .detail{
           display: block;
           height: 2200px;
+          overflow: hidden;
         }
       .profile{
           width: 100%;
           position: relative;
       }
-      .profile-header{
+      .profile-header h1{
           display: flex;
+          font-size: 50px;
       }
       .profile-header{
           width: 60%;
@@ -205,10 +207,13 @@
         position: absolute;  
         display:block;
         width: 100%;
+        height: 590px;
        
     } 
     .profile-photo img{
         object-fit: cover;
+        height: 550px;
+        width: 100%;
     } 
       .profile-section{
           width: 100%;
@@ -216,16 +221,17 @@
       .main-sentence{
           position: absolute;
           width: 100%;
-          padding-top: 40px;
-          margin-left: 2%;
-          top: 730px;
+         
+          margin-left: 0px;
+          top: 690px;
       }
       .detail-section{
         position: absolute;
           width: 100%;
-          padding-top: 20px;
-          margin-left: 2%;
-          top: 730px;
+         
+          margin-left: 0px;
+          top: 690px;
+          font-size: 13px;
       }
 
       .photo{

@@ -157,6 +157,7 @@ body{
     font-size: 15px;
     margin-left: 5%;
     
+    
 }
 .detail-section{
     width: 40%;
@@ -171,12 +172,15 @@ body{
     padding-left: 150px;*/
 }
 .photo{
+    position: absolute;
+ 
     margin-top: 180px;
     margin-right:  5%; 
     width: 50%;
     height: 1000px;
     background-image: url("profile_new.jpg");
     background-size: cover;
+    right: 0.3%;
 }
 .bokashi{
     opacity: 0.3;

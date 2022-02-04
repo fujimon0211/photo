@@ -24,6 +24,9 @@
           padding:0px;
           box-sizing:border-box;
       }
+      .br-point{
+          display: block;
+      }
   
   
       /*こっからmenu*/
@@ -221,19 +224,20 @@
       .main-sentence{
           position: absolute;
           width: 100%;
-         font-size: 14px;
+         font-size: 11px;
        
-          top: 690px;
-          margin: 0px 1%;
+          top: 680px;
+          margin: 0% 1%;
       }
       .detail-section{
         position: absolute;
-          width: 100%;
+          width: 90%;
          padding-top: 0px;
-      
+        
           top: 690px;
-          font-size: 14px;
-          margin: 0px 1%;
+          font-size: 10px;
+         margin-left: 6%;
+         margin-right: 2%;
       }
 
       .photo{

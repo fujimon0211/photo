@@ -10,9 +10,7 @@
           margin-right: 5%;
           width:750px ;
         }*/
-        .detail-section{
-
-        }        
+               
         }
 
     @media all and (max-width: 750px){
@@ -202,10 +200,7 @@
          right: 30px;
         
       }
-      .btn{
-        width: 58.5px;
-        height: 58.5px;
-      }
+     
       .profile-photo { 
         position: absolute;  
         display:block;
@@ -223,18 +218,19 @@
       }  
       .main-sentence{
           position: absolute;
-          width: 100%;
-         font-size: 11px;
+          width: 90%;
+         font-size: 10px;
        
           top: 680px;
-          margin: 0% 1%;
+          margin-left: 6%;
+         margin-right: 2%;
       }
       .detail-section{
         position: absolute;
           width: 90%;
          padding-top: 0px;
         
-          top: 690px;
+          top: 660px;
           font-size: 10px;
          margin-left: 6%;
          margin-right: 2%;
